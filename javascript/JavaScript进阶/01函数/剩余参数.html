@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1. `...` 是语法符号，置于最末函数形参之前，用于获取多余的实参
+        // 2. 借助 `...` 获取的剩余实参，是个真数组
+        function config(baseURL, ...other) {
+            console.log(baseURL) // 得到 'http://baidu.com'
+            console.log(other)  // other  得到 ['get', 'json']
+        }
+        // 调用函数
+        config('http://baidu.com', 'get', 'json');
+    </script>
+</body>
+
+</html>

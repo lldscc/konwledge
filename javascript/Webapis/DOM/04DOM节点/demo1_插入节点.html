@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="box">box</div>
+    <button class="btn">点击添加节点</button>
+
+    <script>
+        //点击按钮为box添加节点
+        const btn = document.querySelector('.btn');
+        btn.addEventListener('click', function () {
+            //1.创建节点
+            const div = document.createElement('div');
+            div.innerHTML = '我是新节点';
+            //复制节点
+            const div1 = document.querySelector('div').cloneNode(true);
+            div1.style.color = 'blue';
+            //2.添加节点
+            const box = document.querySelector('.box');
+            // box.appendChild(div);
+            // box.appendChild(div1);
+        })
+
+    </script>
+</body>
+
+</html>

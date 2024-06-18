@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Box {
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+        }
+
+        .app {
+            margin: 20px auto;
+            width: 60px;
+            height: 30px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Box">
+        <button class="app">11</button>
+        <div class="app">22</div>
+        <div class="app">33</div>
+        <div class="app">44</div>
+        <div class="app">55</div>
+        <div class="app">66</div>
+        <div class="app">77</div>
+        <div class="app">88</div>
+        <div class="app">99</div>
+        <div class="app">00</div>
+    </div>
+
+    <script>
+        const box = document.querySelector('.Box');
+        const app = document.querySelectorAll('.app');
+
+        //点击子元素触发
+        box.addEventListener('click', function (e) {
+            // console.log('点击子元素')
+            //事件对象中的属性 target 或 srcElement 属性表⽰真正触发事件的元素
+            // console.log(e.target);
+            // console.log(e.target.tagName);
+            if (e.target.tagName === 'DIV') {
+                console.log('点击的是div')
+            } else if (e.target.tagName === 'BUTTON') {
+                console.log('点击的是button')
+            }
+
+
+        })
+    </script>
+</body>
+
+</html>

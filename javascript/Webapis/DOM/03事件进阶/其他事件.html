@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .app {
+        height: 3000px;
+    }
+</style>
+
+<body>
+    <div class="app"></div>
+    <script>
+        //⻚⾯加载事件,加载外部资源（如图⽚、外联CSS和JavaScript等）加载完毕时触发的事件
+        window.addEventListener('load', function () {
+            console.log('页面加载完成');
+        })
+        //元素滚动事件，当元素滚动条滚动时触发的事件
+        window.addEventListener('scroll', function () {
+            console.log('页面滚动');
+        })
+        //⻚⾯尺⼨事件 当⻚⾯尺⼨改变时触发的事件
+        window.addEventListener('resize', function () {
+            console.log('页面尺寸改变');
+            console.log('页面宽度：', window.innerWidth);
+            console.log('页面高度：', window.innerHeight);
+        })
+
+        const app = document.querySelector('.app');
+        console.log(app.offsetWidth);
+        console.log(app.offsetHeight);
+    </script>
+</body>
+
+</html>

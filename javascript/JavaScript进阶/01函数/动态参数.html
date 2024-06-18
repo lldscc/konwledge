@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //`arguments` 是函数内部内置的伪数组变量，它包含了调用函数时传入的所有实参。
+        // 求生函数，计算所有参数的和
+        function sum() {
+            // console.log(arguments)
+            let s = 0
+            for (let i = 0; i < arguments.length; i++) {
+                s += arguments[i]
+            }
+            console.log(s)
+        }
+        // 调用求和函数
+        sum(5, 10)// 两个参数
+        sum(1, 2, 4) // 两个参数
+    </script>
+</body>
+
+</html>

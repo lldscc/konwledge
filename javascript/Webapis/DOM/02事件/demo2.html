@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 100px;
+            background-color: rgb(53, 197, 237);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 box">鼠标事件：点击</div>
+    <div class="box2 box">鼠标事件：移动到元素上方时mouseover ，移出mouseout</div>
+    <div class="box3 box">鼠标事件：mousedown: 当鼠标按钮按下时触发。 mouseup: 当鼠标按钮释放时触发</div>
+    <div class="box4">键盘事件：keydown 键盘按下触发； keyup 键盘抬起触发</div>
+
+
+</body>
+<script>
+    // 鼠标事件
+    const box1 = document.querySelector('.box1')
+    box1.addEventListener('click', function(){
+       box1.style.backgroundColor = 'red'
+    })
+    const box2 = document.querySelector('.box2')
+    box2.addEventListener('mouseover', function(){
+       box2.style.backgroundColor = 'red'
+    })
+    box2.addEventListener('mouseout', function(){
+       box2.style.backgroundColor = 'black'
+    })
+
+
+    const box3 = document.querySelector('.box3')
+
+    box3.addEventListener('mousedown', function(){
+       box3.style.backgroundColor = 'white'
+    })
+    box3.addEventListener('mouseup', function(){
+       box3.style.backgroundColor = 'black'
+    })
+
+    //键盘事件
+    const box4 = document.querySelector('.box4')
+    box4.addEventListener('keydown', function(){
+         box4.style.backgroundColor = 'red'
+     
+
+})
+</script>
+</html>

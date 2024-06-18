@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <ul>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+    </ul>
+    <button class="btn">获取子节点</button>
+    <button class="btn2">获取父节点</button>
+    <script>
+        const btn = document.querySelector('.btn')
+        btn.addEventListener('click', function () {
+            const ul = document.querySelector('ul')
+            //获取子节点
+            console.log(ul.childNodes);
+            //获取子元素
+            console.log(ul.children);
+        })
+
+        const btn2 = document.querySelector('.btn2')
+        btn2.addEventListener('click', function () {
+            const lis = document.querySelectorAll('ul li')
+            //获取父节点
+            console.log(lis[1].parentNode);
+            //下一个节点
+            console.log(lis[1].nextSibling);
+            //上一个节点
+            console.log(lis[1].previousSibling);
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>

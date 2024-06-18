@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="btn">baidu.com</button>
+    <script>
+        const btn = document.querySelector('button')
+        btn.addEventListener('click', () => {
+            location.href = 'https://www.baidu.com'
+        })
+        // location 对象
+        // location 对象用于获取当前页面的地址 (URL)，并把浏览器重定向到新的页面。
+        // 属性
+        // href	返回当前页面的 URL。
+        // hash	设置或返回从井号 (#) 开始的 URL（锚）。
+        // host	返回主机名和当前 URL 的端口号。
+        // hostname	返回当前 URL 的主机名。
+        // pathname	返回当前 URL 的路径部分。
+        // port	返回当前 URL 的端口号。
+        // protocol	返回当前 URL 的协议。
+        // search	设置或返回从问号 (?) 开始的 URL（查询部分）。
+        // 方法
+        // assign()	加载新的文档。
+        // reload()	重新加载当前文档。
+        // replace()	用新的文档替换当前文档。
+        console.log(location.href)
+        console.log(location.hash)
+        console.log(location.host)
+        console.log(location.hostname)
+        console.log(location.pathname)
+        console.log(location.port)
+        console.log(location.protocol)
+        console.log(location.search)
+        // location.assign('https://www.baidu.com')
+        // location.reload()
+        // location.replace('https://www.baidu.com')
+    </script>
+</body>
+
+</html>
