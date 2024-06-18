@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>结构选择器</title>
+  <style>
+    /* 后代选择器 */
+    .container_descendants p{
+      color: aqua;
+    }
+    /* 子代选择器 */
+    .container_offspring>p{
+      color: rgb(126, 187, 76);
+
+    }
+    /* 兄弟选择器 */
+    .container_brother1+.container_brother2{
+      color: brown;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container_descendants">
+    <p>后代1</p>
+    <div>
+    <p>后代2</p>
+    </div>
+  </div>
+  <hr>
+  <div class="container_offspring">
+    <p>子代</p>
+    <div>
+    <p>后代</p>
+    </div>
+  </div>
+  <hr>
+  <div class="container_brother1">brother1</div>
+  <div class="container_brother2">brother2</div>
+  <hr>
+</body>
+</html>

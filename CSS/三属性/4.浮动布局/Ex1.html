@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 清除浮动 */
+    /* 使用场景，一个元素受到另一个元素的浮动影响，不适用于父级元素 */
+    main {
+      width: 400px;
+      border: 1px solid black;
+      padding: 20px;
+
+    }
+    section {
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+
+    }
+    section:nth-child(1) {
+      float: left;
+    }
+    section:nth-child(2) {
+      clear: both;
+    }
+  </style>
+
+<body>
+  <main>
+    <section></section>
+    <section></section>
+  </main>
+</body>
+</html>

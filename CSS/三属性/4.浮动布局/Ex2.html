@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 清除浮动 */
+    /* after伪类消除高度塌陷 */
+    main {
+      width: 400px;
+      border: 1px solid black;
+      padding: 20px;
+    }
+
+    section {
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+      float: left;
+    }
+
+    main::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  </style>
+
+
+<body>
+  <main>
+    <section></section>
+  </main>
+</body>
+</html>
