@@ -8,7 +8,7 @@ let lldsweb = 'www.llds.cc'
 /**
  * 2.数值类型 number
  * */
-//  存储整数、浮点数 es6不区分整数和浮点数
+//  存储整数、浮点数 es6不区分整数和浮点数 统一为number类型
 let num1 = 100
 let num2 = 60.5
 console.log('num1：',typeof num1)
